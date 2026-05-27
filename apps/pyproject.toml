@@ -1,0 +1,16 @@
+[project]
+name = "coding-agent-exploration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "marimo>=0.23.8",
+    "mo>=0.3.0",
+    "wigglystuff>=0.5.4",
+]
+
+[tool.uv.workspace]
+members = [
+    "test-bench/.cursor/hooks",
+]
