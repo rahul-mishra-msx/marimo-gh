@@ -778,7 +778,7 @@ def _():
 
 @app.cell
 def _(CURSOR_HOOKS, gw, mo):
-    hook_name = gw.selected_nodes[0]
+    hook_name = I(gw.selected_nodes or ["SELEC NODE"])[0]
     hook_desc = CURSOR_HOOKS.get(hook_name, {}).get("description")
     hook_ex = CURSOR_HOOKS.get(hook_name, {}).get("example")
     hook_dia = CURSOR_HOOKS.get(hook_name, {}).get("diagram")
