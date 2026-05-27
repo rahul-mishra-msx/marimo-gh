@@ -42,6 +42,7 @@ def _(mo):
 @app.cell
 def _():
     PREFIX="https://raw.githubusercontent.com/rahul-mishra-msx/marimo-gh/main/apps"
+    print(PREFIX)
     mode_data = {
         "plan_mode": {
             "title": "Plan Mode",
