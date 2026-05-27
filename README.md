@@ -1,3 +1,3 @@
 # Notebook Experiments
 
-1. Cursor Exploration
+1. Cursor Explorations
