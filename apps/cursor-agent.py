@@ -41,31 +41,32 @@ def _(mo):
 
 @app.cell
 def _():
+    PREFIX="https://raw.githubusercontent.com/rahul-mishra-msx/marimo-gh/main/apps/"
     mode_data = {
         "plan_mode": {
             "title": "Plan Mode",
             "description": "Researches the codebase, asks clarifying questions, creates a reviewable implementation plan, and lets you edit/review that plan before building.",
-            "vid": "cursor-demo.gif"
+            "vid": f"{PREFIX}/cursor-demo.gif"
         },
         "ask_mode": {
             "title": "Ask Mode",
             "description": "Searches and explains your codebase without editing files. In the CLI, Cursor says Ask mode is for exploring code without making changes.",
-            "vid": "cursor-demo-ask.gif"
+            "vid": f"{PREFIX}/cursor-demo-ask.gif"
         },
         "agent_mode": {
             "title": "Agent Mode",
             "description": "Can complete coding tasks, search code, read files, edit files, run terminal commands, use browser tools, generate images, and create checkpoints",
-            "vid": "cursor-demo-agent.gif"
+            "vid": f"{PREFIX}/cursor-demo-agent.gif"
         },
         "debug_mode": {
             "title": "Debug Mode",
             "description": "Generates hypotheses, adds logging/instrumentation, asks you to reproduce the bug, analyzes runtime logs, makes a targeted fix, then verifies and cleans up instrumentation.",
-            "vid": "cursor-demo-debug.gif"
+            "vid": f"{PREFIX}/cursor-demo-debug.gif"
         },
         "multi":{
             "title": "Multiagent Mode",
             "description": "Queue follow-up messages while Agent is working; run subagents in parallel; run background subagents independently; hand work to Cloud Agent; isolate work in Git worktrees.",
-            "vid": "cursor-demo-multitask.gif"
+            "vid": f"{PREFIX}/cursor-demo-multitask.gif"
         }
     }
     return (mode_data,)
